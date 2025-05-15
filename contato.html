@@ -8,35 +8,43 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
         <title>Meu Portifólio</title>
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
     </head>
     <body>
 
-        <header>
+        
+		<header>
+			<div id="header_content" class="flex">
 
-            <div id=" header_content">
+				<div id="titulo">
 
-                <div id="titulo">
-                    <h1> Elisa</h1>
-                </div>
+					<h1>Elisa</h1>
 
-                <div id="menu">
-                    <nav>
-                        <ul id="menu">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
+				</div>
 
-                            <li>
-                                <a href="contato.html">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>  
-        </header>
+				<div id="menu">
+
+					<nav>
+
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+
+					</nav>
+
+				</div>
+
+			</div>
+
+		</header>
 
         <main>
-            <section id="contact">
+            <section id="contact" class="flex">
 
               <form action="#" method="submit" id="formulario">
 					<label for="name">Nome: </label>
@@ -69,15 +77,17 @@
 					/>
 					<span id="txtSubject"></span>
                     
-                    <label for="subject">Categoria do assunto: </label>
-                    <input type="radio" id="reclamacao" name="assunto" value="reclamacao">
-                    <label for="reclamacao">Reclamação</label><br>
-                    <input type="radio" id="elogio" name="assunto" value="elogio">
-                    <label for="elogio">Elogio</label><br>
-                    <input type="radio" id="duvida" name="assunto" value="duvida">
-                    <label for="duvida">Dúvida</label><br>
-                    <input type="radio" id="outro" name="assunto" value="outro">
-                    <label for="outro">Outro</label><br>
+                     <label for="subject">Categoria do assunto: </label>
+                    <article id="selecao" class="flex">
+                        <input type="radio" id="reclamacao" name="assunto" value="reclamacao">
+                        <label for="reclamacao">Reclamação</label><br>
+                        <input type="radio" id="elogio" name="assunto" value="elogio">
+                        <label for="elogio">Elogio</label><br>
+                        <input type="radio" id="duvida" name="assunto" value="duvida">
+                        <label for="duvida">Dúvida</label><br>
+                        <input type="radio" id="outro" name="assunto" value="outro">
+                        <label for="outro">Outro</label><br>
+                    </article>
 
 					<label for="message">Mensagem: </label>
 					<textarea
@@ -91,7 +101,7 @@
 					<button type="submit">Enviar</button>
 				</form>
 
-                    <article id="mapa">
+                    <article id="mapa" class="flex_start">
                         <p>Rua Rui Barbosa, 108</p>
                         <p>Xique Xique - BA</p>
 
@@ -104,17 +114,23 @@
             </section>
         </main>
 
-        <footer>
-            <section id="redes sociais">
-                <a href="https://www.linkedin.com/in/elisa-bicudo-lopes/">
-                    <img src="assets/img/linkedin.svg" alt="Linkedin"/>
-                </a>
+       
+		<footer class="flex">
 
-                <a href="https://github.com/eblopes23">
-                    <img src="assets/img/github.svg" alt="GitHub"/>
-                </a>
-            </section>
-            <h3>Feito com ❤️ por Elisa Lopes - 2025</h3>
-        </footer>
+			<section id="redes_sociais">
+
+				<a href="https://www.linkedin.com/in/elisa-bicudo-lopes/">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="https://github.com/eblopes23">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+
+			</section>
+
+			<h3>Feito com 🧡 por Elisa Lopes- 2025</h3>
+
+		</footer>
+
     </body>
 </html>

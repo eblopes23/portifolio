@@ -8,13 +8,14 @@
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
         <title>Meu Portifólio</title>
+        <link rel="stylesheet" href="./assets/css/stylesheet.css">
     </head>
 
     <body>
 
         <header>
 
-            <div id=" header_content">
+            <div id="header_content" class="flex">
 
                 <div id="titulo">
                     <h1> Elisa</h1>
@@ -38,12 +39,13 @@
         </header>
 
         <main>
-            <section id="about">
+            <section id="about" class="flex_start">
 
                 <h2>Quem é a Elisa?</h2>
 
-                <div id="conteudo">
-                    <img src="assets/img/user_02.svg" alt ="foto da criadora desse conteúdo"/>
+                <div id="conteudo" class="flex">
+                    <img src="assets/img/IMG_20241109_163259859.jpg" alt ="foto da criadora desse conteúdo"
+                    class="img_profile"/>
 
                     <article id="sobre_texto">
                         <p>
@@ -56,10 +58,10 @@
                 </div>
             </section>
 
-            <section id="video">
+            <section id="video" class="flex_start">
 
                 <h2>Meu vídeo favorito:</h2>
-                <div id="youtube">
+                <div id="youtube" class="flex">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/1bEi1ty2tqc?si=rpuPjwpyho1GctTx" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -69,7 +71,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="flex">
             <section id="redes sociais">
                 <a href="https://www.linkedin.com/in/elisa-bicudo-lopes/">
                     <img src="assets/img/linkedin.svg" alt="Linkedin"/>
